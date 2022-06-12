@@ -115,8 +115,8 @@ async def play(client, m: Message):
                 add_to_queue(chat_id, songname, dl, link, "Audio", 0)
                 await huehue.delete()
                 # await m.reply_to_message.delete()
-                await m.reply_photo(
-                    photo="https://telegra.ph/file/6213d2673486beca02967.png",
+                await m.reply_text(
+                    
                     caption=f"""
 **▶ Start Playing Song
 🏷️ Title: [{songname}]({link})
@@ -148,8 +148,8 @@ async def play(client, m: Message):
                         pos = add_to_queue(chat_id, songname, ytlink, url, "Audio", 0)
                         await huehue.delete()
                         # await m.reply_to_message.delete()
-                        await m.reply_photo(
-                            photo=f"{thumbnail}",
+                        await m.reply_text(
+                            
                             caption=f"""
 **#⃣ Song In Queue  {pos}
 🏷️ Titel: [{songname}]({url})
@@ -170,8 +170,8 @@ async def play(client, m: Message):
                             add_to_queue(chat_id, songname, ytlink, url, "Audio", 0)
                             await huehue.delete()
                             # await m.reply_to_message.delete()
-                            await m.reply_photo(
-                                photo=f"{thumbnail}",
+                            await m.reply_text(
+                               
                                 caption=f"""
 **▶ Start Playing Song
 🏷️ Title: [{songname}]({url})
@@ -279,8 +279,8 @@ async def vplay(client, m: Message):
                         pos = add_to_queue(chat_id, songname, ytlink, url, "Video", Q)
                         await huehue.delete()
                         # await m.reply_to_message.delete()
-                        await m.reply_photo(
-                            photo=f"{thumbnail}",
+                        await m.reply_text(
+                           
                             caption=f"""
 **#⃣ Videos In Queue Ke {pos}
 🏷️ Title: [{songname}]({url})
@@ -299,8 +299,8 @@ async def vplay(client, m: Message):
                             add_to_queue(chat_id, songname, ytlink, url, "Video", Q)
                             await huehue.delete()
                             # await m.reply_to_message.delete()
-                            await m.reply_photo(
-                                photo=f"{thumbnail}",
+                            await m.reply_text(
+                                
                                 caption=f"""
 **▶ Start Playing Video
 🏷️ Title: [{songname}]({url})
