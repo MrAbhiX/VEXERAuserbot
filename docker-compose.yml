@@ -1,0 +1,9 @@
+version: "4"
+services:
+  yukki:
+    build: .
+    environment:
+      API_ID: $API_ID
+      API_HASH: $API_HASH
+      SESSION: $SESSION
+      SUDO_USERS: $SUDO_USERS
